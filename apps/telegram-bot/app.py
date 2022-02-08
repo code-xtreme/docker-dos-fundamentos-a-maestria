@@ -16,8 +16,10 @@ bot.
 
 import io
 import logging
+import os
 from typing import Any, Dict, Tuple
 
+from dotenv import dotenv_values
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import (CallbackContext, CallbackQueryHandler,
                           CommandHandler, ConversationHandler, Filters,
@@ -298,9 +300,10 @@ def stop_nested(update: Update, context: CallbackContext) -> str:
 def main() -> None:
     """Run the bot."""
     # Create the Updater and pass it your bot's token.
-    token_file = open('token.txt', 'r')
-    token = token_file.readline()
-    updater = Updater(token)
+    #token_file = open('token.txt', 'r')
+    #token = token_file.readline()
+    config = dotenv_values(".env")
+    updater = Updater(config['TOKEN'])
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
