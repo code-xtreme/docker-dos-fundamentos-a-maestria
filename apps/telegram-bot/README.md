@@ -1,10 +1,8 @@
 # Aplicação em Python - Bot Telegram
 
-Este projeto é uma aplicação em Python que usa o Bot Telegram para enviar mensagens aos usuários.
+Este projeto é uma aplicação em Python de um Bot no Telegram que interage com os usuários pegando algumas informações e enviando uma mensagem de resposta.
 
-O código não foi desenvolvido por nós, ele foi somente adaptado a partir de um dos exemplos da biblioteca [python-telegram-bot](https://python-telegram-bot.readthedocs.io/en/stable/intro.html).
-
-Como o nosso curso é sobre o Docker e não de desenvolvimento, não foi necessário fazer o desenvolvimento de uma aplicação em Python.
+O código não foi desenvolvido por nós, ele foi somente adaptado a partir de um dos exemplos da biblioteca [python-telegram-bot](https://python-telegram-bot.readthedocs.io/en/stable/intro.html). O código fonte original pode ser obtido no repositório do GitHub [aqui](https://github.com/python-telegram-bot/python-telegram-bot/tree/master/examples).
 
 Nós primeiramente apresentamos como seria o fluxo de desenvolvimento de uma aplicação Python, na máquina do desenvolvedor, utilizando virtualenv, um recurso bastante indicado para quem desenvolve em Python.
 
